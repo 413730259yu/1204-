@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SCORM 1.2 Manifest -->
+<manifest identifier="p5js-dynamic-quiz-manifest" version="1.0"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+        <lom xmlns="http://www.imsglobal.org/xsd/ims_lom_v1p0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_lom_v1p0 ims_lom_v1p0.xsd">
+            <general>
+                <title>
+                    <langstring xml:lang="zh-Hant">p5.js 動態回饋測驗系統</langstring>
+                </title>
+                <description>
+                    <langstring xml:lang="zh-Hant">一個使用 p5.js 建立的動態回饋測驗系統，可以記錄作答次數與分數成績。</langstring>
+                </description>
+                <keyword>
+                    <langstring xml:lang="en">quiz</langstring>
+                </keyword>
+                <keyword>
+                    <langstring xml:lang="en">p5.js</langstring>
+                </keyword>
+            </general>
+            <lifecycle>
+                <version>
+                    <langstring xml:lang="en">1.0</langstring>
+                </version>
+                <status>
+                    <source>
+                        <langstring xml:lang="x-none">LOMv1.0</langstring>
+                    </source>
+                    <value>
+                        <langstring xml:lang="x-none">Final</langstring>
+                    </value>
+                </status>
+            </lifecycle>
+        </lom>
+    </metadata>
+
+    <organizations default="ORG-QUIZ">
+        <organization identifier="ORG-QUIZ">
+            <title>p5.js 動態回饋測驗系統</title>
+            <item identifier="ITEM-QUIZ" identifierref="RES-QUIZ">
+                <title>測驗開始</title>
+            </item>
+        </organization>
+    </organizations>
+
+    <resources>
+        <resource identifier="RES-QUIZ" type="webcontent" adlcp:scormtype="sco" href="index.html">
+            <file href="index.html"/>
+            <file href="sketch.js"/>
+            <file href="questions.csv"/>
+            <file href="scorm_api_wrapper.js"/>
+        </resource>
+    </resources>
+
+</manifest>

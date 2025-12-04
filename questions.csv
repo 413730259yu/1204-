@@ -1,0 +1,6 @@
+question,optionA,optionB,optionC,correct,explanation
+"What color is the sky?","Blue","Red","Green",0,"sky: 天空, Blue: 藍色"
+"I like to eat _______.","dog","apple","chair",1,"eat: 吃, apple: 蘋果"
+"Which one can fly?","cat","bird","fish",1,"fly: 飛, bird: 鳥"
+"It’s rainy. You need a _______.","hat","coat","umbrella",2,"rainy: 下雨的, need: 需要, umbrella: 雨傘"
+"What do bees produce?","Milk","Honey","Water",1,"bees: 蜜蜂, produce: 生產, Honey: 蜂蜜"
